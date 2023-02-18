@@ -14,11 +14,12 @@
         <p>In this exercise we will practice the use of JavaScript events. Use the lecture-material as a reference guide side by side with these exercises. It might also be a good idea to save the lines of code you write during the exercises for later use.</p>
         <hr/>
         <h2>Exercise 1</h2>
-        <p>Below you will see three buttons. Edit the source code and add an onClick-events to these buttons.</p>
+        <p>&nbsp;Below you will see four buttons. Edit the source code and add an onClick-events to these buttons.</p>
         <p>
-          <button>Click me</button>
-          <button>Show table</button>
-          <button>Geolocation</button>
+          <button onclick="alert('You clicked me!' + new Date)" >Click me</button>
+          <button onclick="showDate();">Show Date</button>
+          <button onclick="showTable2();">Show Table</button>
+          <button onclick="geoLocation();">Geolocation</button>
         </p>
 
         <ol>
@@ -26,7 +27,7 @@
           <li> When you see the button working, add the current date after the text by using the Date() -function.</li>
           <li>The second button should call a function called showTable()". ShowTable function should output a simple HTML-table (below) to the page. Use document.write to print data. Feel free to modify the data on the table.</li>
         </ol>
-        <table id="example" class="display">
+        <table id="example" class="display" cellspacing="0" width="100%">
             <thead>
                 <tr>
                     <th>Name</th>
